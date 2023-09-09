@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{tikz}
+
+\providecommand{\englishquestions}{47}
+\providecommand{\mathquestions}{35}
+
+\newlist{bubblelist}{enumerate}{1}
+\setlist[bubblelist,1]{label=\arabic*. ,left=0pt}
+
+\newcommand{\bubbles}{
+    \item \(\bigcirc\) A \hspace{1em} 
+          \(\bigcirc\) B \hspace{1em} 
+          \(\bigcirc\) C \hspace{1em} 
+          \(\bigcirc\) D \hspace{1em} 
+          \(\bigcirc\) E
+}
+
+\begin{document}
+
+\section*{ENGLISH (\englishquestions{} QUESTIONS)}
+For each question, mark the appropriate bubble corresponding to your answer.
+\begin{bubblelist}
+\foreach \x in {1,...,\englishquestions} {
+    \bubbles
+}
+\end{bubblelist}
+
+\section*{MATH (\mathquestions{} QUESTIONS)}
+For each question, mark the appropriate bubble corresponding to your answer.
+\begin{bubblelist}
+\foreach \x in {1,...,\mathquestions} {
+    \bubbles
+}
+\end{bubblelist}
+
+\end{document}
