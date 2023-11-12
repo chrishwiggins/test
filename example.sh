@@ -1,1 +1,1 @@
-bash test.bash 4 5
+bash test.bash 27 18
